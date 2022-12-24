@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Open+Sans:wght@300;400&family=Quicksand:wght@600&family=Roboto+Slab&family=Rubik&display=swap');
+
+:root {
+    --main-bg-color: rgb(12, 145, 76);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.text-all-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-2{
+    margin: 30px 0px ;
+}
+.text-centre{
+    text-align: center;
+}
+.margin{
+    margin: 0px 6px;
+}
+ .my-3{
+   
+     margin: 0px 20px;
+} 
+
+header {
+   
+    background-color: black;
+    /* background-color: var(--main-bg-color); */
+    /* <------this above variable is of great importance, because it can help us in changing of color of all, at a same point of time------->  */
+    /* <----you can search some more variable form css variable mdn-----> */
+}
+
+nav {
+    height: 15vh; 
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    
+}
+.my {
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Alkalami', serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 30px 35px;
+
+}
+
+nav ul li :hover {
+    font-weight: bolder;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+   
+
+}
+
+#bar {
+    height: 4vh;
+    width: 35vw;
+    border-radius: 5px;
+
+}
+
+.search button {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.button {
+    padding: 3px 6px;
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.container {
+    min-height: calc(100vh - 8vh - 12vh);
+
+}
+
+.big-picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    overflow: hidden;
+   
+}
+
+.box {
+    width: 90vw;
+    margin: auto;
+}
+
+.box h2 {
+    font-family: 'Rubik', sans-serif;
+    text-transform: capitalize;
+}
+
+.box .box-item {
+    display: inline-flex;
+    flex-direction: column;
+
+}
+
+.box .items-line {
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+.box .items-specification {
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 2px 0px;
+    text-align: center;
+}
+
+footer {
+    height: 10vh;
+    background-color: black;
+    color: white;
+    font-family: 'Alkalami', serif;
+}
+
+/* media queary */
+@media screen and (min-width:1100px) and (max-width:1300px){
+    nav ul li {
+        padding: 30px 15px;
+    }
+}
+@media  screen and (min-width :970px) and (max-width:1100px){
+    nav ul li {
+        padding: 30px 15px;
+    }
+    .my{
+        font-size: 40px;
+    }
+    #bar{
+        width: 25vh;
+        height: 3vh;
+    }
+}
+@media screen and (min-width:500px) and (max-width:970px) {
+    nav{
+        display: grid;
+        justify-content:space-around ;
+        align-items: center;
+        height: 24vh;
+    }
+    .my{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    nav ul li {
+        padding: 0px 30px;
+    }
+    #bar{
+        width: 60vw;
+        justify-content: center;
+        height: 3vh;
+    }
+    .size{
+        display: grid;
+    }
+    .box .items-specification{
+        font-size: 25px;
+    }
+    .box h2{
+        font-size: 40px;
+    }
+    footer{
+        height: 17vh;
+    }
+}
+@media screen and (min-width:280px) and (max-width:500px) {
+    nav{
+        display: grid;
+        justify-content:space-around ;
+        align-items: center;
+        height: 22vh;
+    }
+    .my{
+        font-size: 35px;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    nav ul li {
+        padding: 0px 15px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    .search{
+        justify-content: center;
+    }
+    #bar{
+        width: 60vw;
+        justify-content: center;
+        height: 3vh;
+    }
+    .size{
+        display: grid;
+    }
+    footer p{
+        font-size: 12px;
+    }
+}
+/* end of css for this project  */
